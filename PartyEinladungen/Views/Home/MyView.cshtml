@@ -1,0 +1,33 @@
+﻿
+@*@{
+    ViewData["Title"] = "MyView";
+}
+
+<h2>MyView</h2>*@
+
+@{ 
+    Layout = null;
+}
+
+<!doctype html>
+
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <titel>Index</titel>
+    </head>
+
+    <body>
+        <div>
+            @ViewBag.Gruesse Welt (from then View)
+            <p>
+                Wir werden eine schöne Party haben. <br />
+                (To Do: Verkaufe es besser. Füge Bilder oder sonst was hinzu.)
+            </p>
+
+            <a asp-action="RsvpForm">RSVP Now</a>   
+       </div>
+    </body>
+
+</html>
